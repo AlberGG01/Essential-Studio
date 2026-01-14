@@ -71,7 +71,9 @@
 
 /* Card */
 .card {
-    background: var(--color-white);
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/fotos/foto-tecnicas.png');
+    background-size: cover;
+    background-position: center;
     padding: 3rem 2.5rem;
     border: 1px solid var(--color-mist);
     transition: var(--transition-elegant);
