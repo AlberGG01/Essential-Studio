@@ -163,6 +163,9 @@
         justify-content: center;
         transform: translateX(100%);
         visibility: hidden;
+        z-index: 1000;
+        overflow-y: auto;
+        /* Allow scrolling within menu if content is tall */
     }
 
     .nav.navOpen {
