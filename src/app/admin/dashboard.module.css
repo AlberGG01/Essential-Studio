@@ -1,0 +1,168 @@
+.dashboard {
+    max-width: 1200px;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.header p {
+    color: var(--color-text-light);
+}
+
+/* Stats Grid */
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.statCard {
+    background: var(--color-white);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.statIcon {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    background: var(--color-beige);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.statNumber {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--color-black);
+}
+
+.statLabel {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+}
+
+/* Quick Actions */
+.quickActions {
+    margin-bottom: 2rem;
+}
+
+.quickActions h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.actionsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.actionCard {
+    background: var(--color-white);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    transition: var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.actionCard:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.actionIcon {
+    font-size: 2rem;
+}
+
+.actionTitle {
+    font-weight: 600;
+    color: var(--color-text-dark);
+}
+
+.actionDescription {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+/* Info */
+.info h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.infoCard {
+    background: var(--color-white);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.infoCard h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.infoCard ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.infoCard li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+.infoCard li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-gold);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .statsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .actionsGrid {
+        grid-template-columns: 1fr;
+    }
+}

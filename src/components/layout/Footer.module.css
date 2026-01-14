@@ -1,0 +1,173 @@
+.footer {
+    background: var(--color-charcoal);
+    color: var(--color-pearl);
+    padding: 5rem 0 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Top Section */
+.top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+/* Brand */
+.brand {
+    max-width: 300px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+
+.logoMain {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 8px;
+    color: var(--color-white);
+}
+
+.logoSub {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: var(--color-pearl);
+}
+
+.tagline {
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--color-pearl);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Contact & Social */
+.contact h4,
+.social h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-pearl);
+    margin-bottom: 1.5rem;
+}
+
+.contactItem {
+    margin-bottom: 0.75rem;
+}
+
+.contactItem span {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--color-mist);
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.socialLink {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--color-mist);
+    transition: var(--transition-gentle);
+}
+
+.socialLink:hover {
+    color: var(--color-white);
+}
+
+/* Divider */
+.divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-slate), transparent);
+    margin-bottom: 2rem;
+}
+
+/* Bottom */
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: var(--color-ash);
+    margin: 0;
+}
+
+.legalNav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legalLink {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: var(--color-ash);
+    transition: var(--transition-gentle);
+}
+
+.legalLink:hover {
+    color: var(--color-mist);
+}
+
+.separator {
+    color: var(--color-slate);
+    margin: 0 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: 4rem 0 2rem;
+    }
+
+    .top {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .brand {
+        max-width: 100%;
+    }
+
+    .logo {
+        align-items: center;
+    }
+
+    .socialLinks {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
